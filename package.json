@@ -1,0 +1,19 @@
+{
+  "name": "mi_pagina_web",
+  "version": "1.0.0",
+  "description": "mi primera pagina web",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nixonbmx/mi_pagina_web.git"
+  },
+  "author": "nixon pineres",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nixonbmx/mi_pagina_web/issues"
+  },
+  "homepage": "https://github.com/nixonbmx/mi_pagina_web#readme"
+}
