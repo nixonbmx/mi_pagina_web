@@ -4,7 +4,7 @@
   "description": "mi primera pagina web",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "lite-server"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/nixonbmx/mi_pagina_web/issues"
   },
-  "homepage": "https://github.com/nixonbmx/mi_pagina_web#readme"
+  "homepage": "https://github.com/nixonbmx/mi_pagina_web#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
 }
