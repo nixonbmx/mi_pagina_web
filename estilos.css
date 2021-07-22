@@ -1,0 +1,23 @@
+.jumbotron{
+    background-color: gold;
+    padding: 20px;
+    text-align: center ;
+    margin-top: 50px;
+    
+}
+footer{
+    padding: 10px 10px  0 10px;
+    background-color: red;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+.card{
+    flex: 1 150px;
+    padding: 2px 5px  2px 5px;
+    margin-top: 10px;
+
+}
+.btn-dos{
+    width: 100%;
+   
+}
