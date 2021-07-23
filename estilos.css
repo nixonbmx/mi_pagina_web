@@ -11,13 +11,14 @@ footer{
     margin-bottom: 0px;
     margin-top: 10px;
 }
-.card{
-    flex: 1 150px;
-    padding: 2px 5px  2px 5px;
+.cardb{
+    flex: 1 200px;
+   
     margin-top: 10px;
 
 }
 .btn-dos{
     width: 100%;
+    border-radius: 0px;
    
 }
