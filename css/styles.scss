@@ -1,0 +1,34 @@
+$yellow:#fffa19;
+
+
+@mixin margenes ($top, $bottom){
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+.jumbotron{
+    background-color: $yellow;
+    padding: 20px;
+    text-align: center ;
+    @include margenes(50px, 0px);
+    
+}
+footer{
+    padding: 10px 10px  0 10px;
+    background-color: $yellow;
+  
+    @include margenes(10px, 0px);
+}
+.cardb{
+    flex: 1 200px;
+   
+    @include margenes(10px, 0px);
+
+}
+.btn-dos{
+    width: 100%;
+    border-radius: 0px;
+   
+}
+.tab-content{
+    padding-top: 10px;
+}

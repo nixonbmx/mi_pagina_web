@@ -9,10 +9,11 @@
     <meta name="keywords" content="paginas, web, marketing, digital">
     <meta name="author" content="Nixon Armando Piñeres gomez">
     <title>tu pagina web </title>
-    <!-- estilos css  -->
+    <!-- build:css dist/index.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- endbuild  -->
 </head>
 <!--body -->
 <body >
@@ -45,20 +46,33 @@
       <li class="breadcrumb-item active" aria-current="page">Home</li>
     </ol>
   </nav>
+
+
   <div class="row">
     <div class="col-sm-4">
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#funciona" aria-expanded="false" aria-controls="multiCollapseExample1">como funciona</button>
+    </div>
+    <div class="col-sm-4">
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#reserva" aria-expanded="false" aria-controls="multiCollapseExample2">donde puedo reservar </button>
+    </div>
+    <div class="col-sm-4">
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#pago" aria-expanded="false" aria-controls="multiCollapseExample3">como pago </button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4 collapse multi-collapse " id="funciona">
       <p>
         <h3>como funciona?</h3>
         <p>busca los hoteles de acuerdo a tu preferencia</p>
       </p>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4 collapse multi-collapse " id="reserva">
       <p>
         <h3>como funciona?</h3>
         <p>busca los hoteles de acuerdo a tu preferencia</p>
       </p>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4 collapse multi-collapse " id="pago">
       <p>
         <h3>como funciona?</h3>
         <p>busca los hoteles de acuerdo a tu preferencia</p>
@@ -66,13 +80,43 @@
     </div>
   </div>
   <hr>
-  <img src="./images/social-media-mobile-icons-snapchat-facebook-instagram-ss-1920.jpg" class="img-fluid" alt="responisve img">
+
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./images/7beb7869225b330a7725571e16f85690.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/descarga.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/marketing-digital-MKT-1.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+
+
+  
     <div class="d-flex flex-wrap flex-row-reverse ">
       <div class=" card cardb d-flex flex-column justify-content-between ms-2">
         <div class="card-body">
-        <h4 class="card-title">pagina web </h4>
+          <h4 class="card-title " data-bs-toggle="tooltip" data-bs-placement="top" title="los 10 primeros obtienen descuento del 20 %">pagina web </h4>
         <img class="card-img-top" src="./images/7beb7869225b330a7725571e16f85690.jpg" alt="img uno">
         <p class="card-text">perfecto para mostrar informacion de tu empresa  </p>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">reserva</button>
+        <button type="button" class="btn  btn-danger" data-bs-toggle="popover" title="promociones" data-bs-content="consulta las promociones vigentes">info</button>
+
       </div>
       <div>
         <button class="btn btn-success btn-dos"> Lo quiero!<i class="bi bi-plus-lg"></i>  </button>
@@ -80,9 +124,12 @@
       </div>
       <div class="card cardb d-flex flex-column justify-content-between ms-2">
         <div class="card-body">
-        <h4 class="card-title">pagina web </h4>
+          <h4 class="card-title " data-bs-toggle="tooltip" data-bs-placement="top" title="los 10 primeros obtienen descuento del 20 %">pagina web </h4>
         <img class="card-img-top" src="./images/paisaje-naturaleza-dibujos-animados-montana-bosque-arboles-hoja-caduca-despeje-troncos_107791-3706.jpg" alt="img uno">
         <p class="card-text">perfecto para mostrar informacion de tu empresa  </p>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">reserva</button>
+        <button type="button" class="btn  btn-danger" data-bs-toggle="popover" title="promociones" data-bs-content="consulta las promociones vigentes">info</button>
+
       </div>
       <div>
         <button class="btn btn-success btn-dos"> Lo quiero!<i class="bi bi-plus-lg"></i>  </button>
@@ -91,9 +138,12 @@
      
       <div class=" card cardb d-flex flex-column justify-content-between ms-2">
         <div class="card-body">
-        <h4 class="card-title">pagina web </h4>
+          <h4 class="card-title " data-bs-toggle="tooltip" data-bs-placement="top" title="los 10 primeros obtienen descuento del 20 %">pagina web </h4>
         <img class="card-img-top" src="./images/paisaje-naturaleza-dibujos-animados-montana-bosque-arboles-hoja-caduca-despeje-troncos_107791-3706.jpg" alt="img uno">
         <p class="card-text">perfecto para mostrar informacion de tu empresa  </p>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">reserva</button>
+        <button type="button" class="btn  btn-danger" data-bs-toggle="popover" title="promociones" data-bs-content="consulta las promociones vigentes">info</button>
+
       </div>
       <div>
         <button class="btn btn-success btn-dos"> Lo quiero!<i class="bi bi-plus-lg"></i>  </button>
@@ -101,9 +151,12 @@
       </div>
       <div class="card  cardb d-flex flex-column justify-content-between ms-2">
         <div class="card-body">
-        <h4 class="card-title">pagina web </h4>
+          <h4 class="card-title " data-bs-toggle="tooltip" data-bs-placement="top" title="los 10 primeros obtienen descuento del 20 %">pagina web </h4>
         <img class="card-img-top" src="./images/paisaje-naturaleza-dibujos-animados-montana-bosque-arboles-hoja-caduca-despeje-troncos_107791-3706.jpg" alt="img uno">
         <p class="card-text">perfecto para mostrar informacion de tu empresa  </p>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">reserva</button>
+        <button type="button" class="btn  btn-danger" data-bs-toggle="popover" title="promociones" data-bs-content="consulta las promociones vigentes">info</button>
+
       </div>
       <div>
         <button class="btn btn-success btn-dos"> Lo quiero!<i class="bi bi-plus-lg"></i>  </button>
@@ -111,9 +164,13 @@
       </div>
       <div class="  card cardb d-flex flex-column justify-content-between ms-2">
         <div class="card-body">
-        <h4 class="card-title">pagina web </h4>
+          <h4 class="card-title " data-bs-toggle="tooltip" data-bs-placement="top" title="los 10 primeros obtienen descuento del 20 %">pagina web </h4>
         <img class="card-img-top" src="./images/paisaje-naturaleza-dibujos-animados-montana-bosque-arboles-hoja-caduca-despeje-troncos_107791-3706.jpg" alt="img uno">
         <p class="card-text">perfecto para mostrar informacion de tu empresa  </p>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">reserva</button>
+        
+        <button type="button" class="btn  btn-danger" data-bs-toggle="popover" title="promociones" data-bs-content="consulta las promociones vigentes">info</button>
+
       </div>
       <div>
         <button class="btn btn-success btn-dos"> Lo quiero!<i class="bi bi-plus-lg"></i>  </button>
@@ -121,9 +178,12 @@
       </div>
       <div class="  card cardb d-flex flex-column justify-content-between ms-2">
         <div class="card-body">
-        <h4 class="card-title">pagina web </h4>
+          <h4 class="card-title " data-bs-toggle="tooltip" data-bs-placement="top" title="los 10 primeros obtienen descuento del 20 %">pagina web </h4>
         <img class="card-img-top" src="./images/paisaje-naturaleza-dibujos-animados-montana-bosque-arboles-hoja-caduca-despeje-troncos_107791-3706.jpg" alt="img uno">
         <p class="card-text">perfecto para mostrar informacion de tu empresa  </p>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"> reserva</button>
+        <button type="button" class="btn  btn-danger" data-bs-toggle="popover" title="promociones" data-bs-content="consulta las promociones vigentes">info</button>
+
       </div>
       <div>
         <button class="btn btn-success btn-dos"> Lo quiero!<i class="bi bi-plus-lg"></i>  </button>
@@ -131,9 +191,14 @@
       </div>
       <div class=" card cardb d-flex flex-column justify-content-between ms-2">
         <div class="card-body">
-        <h4 class="card-title">pagina web </h4>
+        <h4 class="card-title " data-bs-toggle="tooltip" data-bs-placement="top" title="los 10 primeros obtienen descuento del 20 %">pagina web </h4>
         <img class="card-img-top" src="./images/paisaje-naturaleza-dibujos-animados-montana-bosque-arboles-hoja-caduca-despeje-troncos_107791-3706.jpg" alt="img uno">
         <p class="card-text">perfecto para mostrar informacion de tu empresa  </p>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">reserva</button>
+        <button type="button" class="btn  btn-danger" data-bs-toggle="popover" title="promociones" data-bs-content="consulta las promociones vigentes">info</button>
+
+        
+       
       </div>
       <div>
         <button class="btn btn-success btn-dos"> Lo quiero!<i class="bi bi-plus-lg"></i>  </button>
@@ -141,20 +206,54 @@
       </div>
       <div class=" card cardb d-flex flex-column justify-content-between ms-2">
         <div class="card-body">
-        <h4 class="card-title">pagina web </h4>
+          <h4 class="card-title " data-bs-toggle="tooltip" data-bs-placement="top" title="los 10 primeros obtienen descuento del 20 %">pagina web </h4>
         <img class="card-img-top" src="./images/paisaje-naturaleza-dibujos-animados-montana-bosque-arboles-hoja-caduca-despeje-troncos_107791-3706.jpg" alt="img uno">
         <p class="card-text">perfecto para mostrar informacion de tu empresa  </p>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="contacto">jquery</button>
+        <button type="button" class="btn  btn-danger" data-bs-toggle="popover" title="promociones" data-bs-content="consulta las promociones vigentes">info</button>
+        
+        
       </div>
       <div>
+       
         <button class="btn btn-success btn-dos"> Lo quiero!<i class="bi bi-plus-lg"></i>  </button>
       </div>
       </div>
-      
+    </div>
+
+    
+
+
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">contacto con el hotel </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">tu email:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">Mensaje:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Enviar</button>
+          </div>
+        </div>
+      </div>
     </div>
 </div>
 <!-- inicio section-->
 <section>
- 
   <!-- inicio article-->
   <article>
   </article>
@@ -185,13 +284,14 @@
       <a href="https://www.facebook.com/"> contacto</a>
     </div>
 </div>
-
 </footer>
  <!-- fin footer-->
 <!-- estos son los script  -->
-<script src="/node_modules/popper.js/dist/popper.min.js"></script>
+<!-- build:js dist/index.js -->
+<script src="/node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
 <script src="/node_modules/jquery/dist/jquery.min.js"></script>
 <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="hola.js"></script>
+<script src="hola.js"></script> 
+<!-- endbuild -->
 </body>
 </html>
